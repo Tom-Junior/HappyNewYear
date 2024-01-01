@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Para esconder barras de rolagem */
+}
+
+video,
+audio {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+header {
+    background-color: rgba(52, 152, 219, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Adicionado para sobrepor a música */
+    z-index: 1; /* Adicionado para sobrepor a música */
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Adicionado para sobrepor a música */
+    z-index: 1; /* Adicionado para sobrepor a música */
+    text-align: justify; /* Adicionado para justificar o texto */
+}
+
+section em {
+    font-weight: bold;
+    color: #e74c3c; /* Cor de destaque */
+}
+
+section .animated {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 150px;
+    padding: 10px;
+    background-color: rgba(52, 152, 219, 0.7);
+    color: hwb(0 99% 0%);
+    position: relative; /* Adicionado para sobrepor a música */
+    z-index: 1; /* Adicionado para sobrepor a música */
+}
+
+section footer em {
+    font-weight: bold;
+}
